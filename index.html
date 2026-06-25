@@ -151,6 +151,53 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 1.1rem;
   }
+  .contact-form{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:#111827;
+  color:#fff;
+  border-radius:12px;
+  font-size:15px;
+  outline:none;
+  transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#22c55e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.15);
+}
+
+.contact-form textarea{
+  resize:vertical;
+}
+
+.contact-form button{
+  border:none;
+  padding:14px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-form button:hover{
+  transform:translateY(-2px);
+}
   .cc-label { font-size: 0.65rem; color: var(--gold); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.2rem; }
   .cc-val { font-size: 0.88rem; color: var(--white); font-weight: 500; }
   .contact-cta {
@@ -409,6 +456,45 @@
         <div><div class="cc-label">GitHub</div><div class="cc-val">github.com/magarajcb</div></div>
       </a>
       <div class="contact-card">
+        <!-- Contact Form -->
+<form
+  class="contact-form"
+  action="https://formsubmit.co/cbmaharajcbm@gmail.com"
+  method="POST"
+>
+  <input type="hidden" name="_captcha" value="false">
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  />
+
+  <input
+    type="text"
+    name="subject"
+    placeholder="Subject"
+  />
+
+  <textarea
+    name="message"
+    rows="6"
+    placeholder="Your Message"
+    required
+  ></textarea>
+
+  <button type="submit">
+    Send Message
+  </button>
+</form>
         <div class="cc-icon">📍</div>
         <div><div class="cc-label">Location</div><div class="cc-val">Tamil Nadu, India</div></div>
       </div>
